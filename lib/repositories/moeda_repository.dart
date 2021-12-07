@@ -1,4 +1,4 @@
-import 'package:crypto_coins/models/moedas.dart';
+import 'package:crypto_coins/models/moeda.dart';
 
 class MoedaRepository {
   static List<Moeda> tabela = [

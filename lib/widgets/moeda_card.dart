@@ -1,4 +1,5 @@
-import 'package:crypto_coins/models/moedas.dart';
+import 'package:crypto_coins/configs/app_settings.dart';
+import 'package:crypto_coins/models/moeda.dart';
 import 'package:crypto_coins/pages/moedas_detalhes_page.dart';
 import 'package:crypto_coins/repositories/favoritas_repository.dart';
 import 'package:flutter/material.dart';
@@ -15,7 +16,8 @@ class MoedaCard extends StatefulWidget {
 }
 
 class _MoedaCardState extends State<MoedaCard> {
-  NumberFormat real = NumberFormat.currency(locale: 'pt_BR', name: 'R\$');
+
+  late NumberFormat real ;
 
   static Map<String, Color> precoColor = <String, Color>{
     'up': Colors.teal,
@@ -33,6 +35,8 @@ class _MoedaCardState extends State<MoedaCard> {
 
   @override
   Widget build(BuildContext context) {
+  final loc = context.read<AppSettings>().locale;
+  real = NumberFormat.currency(locale: loc['locale'], name: loc['name']);
     return Card(
       margin: EdgeInsets.only(top: 12),
       elevation: 2,
