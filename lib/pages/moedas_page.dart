@@ -1,5 +1,5 @@
 import 'package:crypto_coins/configs/app_settings.dart';
-import 'package:crypto_coins/models/moedas.dart';
+import 'package:crypto_coins/models/moeda.dart';
 import 'package:crypto_coins/pages/moedas_detalhes_page.dart';
 import 'package:crypto_coins/repositories/favoritas_repository.dart';
 import 'package:crypto_coins/repositories/moeda_repository.dart';

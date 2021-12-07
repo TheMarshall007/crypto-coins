@@ -1,5 +1,6 @@
 import 'package:crypto_coins/pages/home_page.dart';
 import 'package:crypto_coins/pages/moedas_page.dart';
+import 'package:crypto_coins/widgets/auth_check.dart';
 import 'package:flutter/material.dart';
 
 class MeuAplicativo extends StatelessWidget {
@@ -8,12 +9,12 @@ class MeuAplicativo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Moedasbase',
+      title: 'Cripto Moedas',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.indigo,
       ),
-      home: HomePage(),
+      home: AuthCheck(),
     );
   }
 }

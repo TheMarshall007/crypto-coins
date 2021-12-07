@@ -1,4 +1,4 @@
-import 'package:crypto_coins/models/moedas.dart';
+import 'package:crypto_coins/models/moeda.dart';
 import 'package:hive/hive.dart';
 
 class MoedaHiveAdapter extends TypeAdapter<Moeda> {
